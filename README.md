@@ -20,12 +20,14 @@
     
 ### editando o arquivo 
 
-    vim compose/metadate/docker-compose.yaml
+### vim compose/metadate/docker-compose.yaml
+
+# ... or docker-compose.yaml
     
     version: "3.7"
-# Declaração dos serviços.
+    # Declaração dos serviços.
 services:
-  # Configuração do container do Postgres.
+    # Configuração do container do Postgres.
   pgsql-metabase-docker:
     # Nome da imagem a ser buscada.
     image: postgres
@@ -47,7 +49,7 @@ services:
       # Use um diretório que já esteja criado.
       - /HOME/docker/volumes/postgres:/var/lib/postgresql/data
 
- # Configuração do container do Metabase.
+ ### Configuração do container do Metabase.
   metabase-docker:
     # Nome da imagem a ser buscada.
     image: metabase/metabase
