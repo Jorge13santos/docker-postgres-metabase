@@ -1,4 +1,4 @@
-1. instalado o docker;
+#  instalado o docker;
 
 # curl -fsSL https://get.docker.com | bash
 # docker info
