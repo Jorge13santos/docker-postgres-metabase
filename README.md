@@ -28,7 +28,8 @@
     # Declaração dos serviços.
 services:
     # Configuração do container do Postgres.
-  pgsql-metabase-docker:
+    
+     pgsql-metabase-docker:
     # Nome da imagem a ser buscada.
     image: postgres
     # Permite escolher reiniciar caso o serviço pare.
@@ -50,7 +51,7 @@ services:
       - /HOME/docker/volumes/postgres:/var/lib/postgresql/data
 
  ### Configuração do container do Metabase.
-  metabase-docker:
+     metabase-docker:
     # Nome da imagem a ser buscada.
     image: metabase/metabase
     # Permite escolher reiniciar caso o serviço pare.
